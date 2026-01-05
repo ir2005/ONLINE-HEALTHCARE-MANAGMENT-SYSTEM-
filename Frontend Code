@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Health Care System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Online Health Care Management System</h1>
+
+<nav>
+    <a href="register.html">Patient Registration</a>
+    <a href="appointment.html">Book Appointment</a>
+</nav>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<h2>Patient Registration</h2>
+
+<form action="RegisterServlet" method="post" onsubmit="return validateForm()">
+    Name: <input type="text" name="name" id="name"><br>
+    Email: <input type="email" name="email" id="email"><br>
+    Age: <input type="number" name="age" id="age"><br>
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Book Appointment</h2>
+
+<form action="AppointmentServlet" method="post">
+    Patient Name: <input type="text" name="pname"><br>
+    Doctor Name: <input type="text" name="doctor"><br>
+    Date: <input type="date" name="date"><br>
+    <input type="submit" value="Book">
+</form>
+
+</body>
+</html>
